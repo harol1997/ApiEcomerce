@@ -19,6 +19,11 @@ you should be create a virtual environment:
 
 - Edit -env file with your information
 
+- execute -> flask db init
+
+- execute -> flask db migrate -m "start"
+
+- execute -> flask db upgrade
 
 - execute in terminal -> flask run
 
