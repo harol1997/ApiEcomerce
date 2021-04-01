@@ -32,3 +32,5 @@ you should be create a virtual environment:
 This API use an ORM, so you must to create a database and put the name in .env file
 
 In creation I used postgresql. If you want to use other database engine so you have to edit config.py appropriately 
+
+- The documentation is in -> localhost:5000/docs
