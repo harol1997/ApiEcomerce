@@ -1,4 +1,4 @@
-#API ECOMERCE
+# API ECOMERCE
 
 you need to install python 3.8.7 in https://www.python.org/downloads/release/python-387/
 
@@ -12,7 +12,7 @@ you should be create a virtual environment:
 
 - if you are in windows -> cd myenv\Scripts\activate
 
-##EXECUTE THE APPLICATION
+## EXECUTE THE APPLICATION
 
 - For first time Install the requeriments -> pip install -r requirements.txt
 
