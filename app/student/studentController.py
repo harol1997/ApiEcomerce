@@ -2,6 +2,7 @@ from app.student.studentModel import Student
 from app import db
 
 from flask import request
+from flask_jwt_extended import create_access_token
 
 class StudentController:
 
@@ -55,5 +56,5 @@ class StudentController:
 
         return {
             'status':'pass',
-            'message':'the studen has been registered'
+            'message':'the student has been registered'
         }

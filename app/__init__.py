@@ -17,6 +17,14 @@ db = SQLAlchemy(app)
 migrate = Migrate(app,db)
 ma = Marshmallow(app)
 
+auth = {
+        'Bearer Auth':{
+                'type':'apiKey',
+                'in':'header',
+                'name':'Authorization'
+        }
+}
+
 api = Api(  app,
         title="Pachaqtec",
         version="0.1",
@@ -24,7 +32,9 @@ api = Api(  app,
         prefix="/api/",
         doc="/docs/",
         contact="Harol Alvarado Valdivieso",
-        contact_url="http://www.google.com"
+        contact_url="http://www.google.com",
+        security='Bearer Auth',
+        authorizations = auth
         )
 
 from app.student import studentModel
@@ -35,3 +45,5 @@ from app.teacher import teacherModel
 from app.tables import tables
 
 from app.course import courseSpace
+
+from app.student import studentRouter
