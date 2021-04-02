@@ -5,7 +5,6 @@ from flask import request
 from flask_jwt_extended import create_access_token
 
 class StudentController:
-
     @staticmethod
     def login():
         username = request.json.get('email')
