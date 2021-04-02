@@ -9,6 +9,3 @@ from flask_jwt_extended import create_access_token
 def login():
     return StudentController.login()
 
-@app.route('/register',methods=['POST'])
-def register():
-    return StudentController.register()

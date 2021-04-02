@@ -1,6 +1,11 @@
 from flask_restx import Resource
-from 
+from flask import request
 
-class StudentResource(Resource):
+from app.student.studentController import StudentController
+from app.student.studentSchema import StudentSchema
+
+student_schema = StudentSchema()
+
+class StudentRegisterResource(Resource):
     def post(self):
-        
+        return StudentController.register()
