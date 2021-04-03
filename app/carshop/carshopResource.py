@@ -11,6 +11,7 @@ from time import strftime
 carshop_schema = CarshopSchema(many = True)
 
 class CarshopResource(Resource):
+    @jwt_required()
     def post(self):
         name = request.json.get('student_id')
         date = strftime('%T-%m-%d')
